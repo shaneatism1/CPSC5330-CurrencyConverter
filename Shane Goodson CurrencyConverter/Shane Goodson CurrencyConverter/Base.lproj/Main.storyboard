@@ -60,9 +60,6 @@
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v3l-Fj-K70">
                                                         <rect key="frame" x="238.66666666666671" y="0.0" width="117.33333333333334" height="31"/>
-                                                        <connections>
-                                                            <action selector="british:" destination="BYZ-38-t0r" eventType="valueChanged" id="AqO-xC-eZQ"/>
-                                                        </connections>
                                                     </switch>
                                                 </subviews>
                                             </stackView>
@@ -87,9 +84,6 @@
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lrx-C7-TJJ">
                                                         <rect key="frame" x="242" y="0.0" width="114" height="31"/>
-                                                        <connections>
-                                                            <action selector="german:" destination="BYZ-38-t0r" eventType="valueChanged" id="j1M-q8-kcH"/>
-                                                        </connections>
                                                     </switch>
                                                 </subviews>
                                             </stackView>
@@ -114,9 +108,6 @@
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WkM-tX-pAo">
                                                         <rect key="frame" x="242" y="0.0" width="114" height="31"/>
-                                                        <connections>
-                                                            <action selector="japan:" destination="BYZ-38-t0r" eventType="valueChanged" id="jsC-WJ-dPV"/>
-                                                        </connections>
                                                     </switch>
                                                 </subviews>
                                             </stackView>
@@ -141,9 +132,6 @@
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ObI-xo-qea">
                                                         <rect key="frame" x="248.66666666666671" y="0.0" width="107.33333333333334" height="31"/>
-                                                        <connections>
-                                                            <action selector="argentina:" destination="BYZ-38-t0r" eventType="valueChanged" id="PqX-Pe-myF"/>
-                                                        </connections>
                                                     </switch>
                                                 </subviews>
                                             </stackView>
@@ -202,7 +190,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="argentina" destination="ObI-xo-qea" id="T7q-Jn-57L"/>
+                        <outlet property="british" destination="v3l-Fj-K70" id="LAp-gs-gNJ"/>
+                        <outlet property="german" destination="lrx-C7-TJJ" id="FXB-NX-aIN"/>
                         <outlet property="input" destination="aLk-yJ-P3i" id="eU9-xv-9gj"/>
+                        <outlet property="japan" destination="WkM-tX-pAo" id="FlC-tq-IVw"/>
                         <segue destination="eJd-bd-VoS" kind="show" identifier="next" id="dBZ-ST-aaJ"/>
                     </connections>
                 </viewController>

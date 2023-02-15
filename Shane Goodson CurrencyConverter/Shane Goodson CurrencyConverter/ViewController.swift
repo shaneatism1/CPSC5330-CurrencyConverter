@@ -16,50 +16,13 @@ class ViewController: UIViewController {
     let yenConvert : Double = 133.03
     let argConvert : Double = 192.00
     
-    var b : Bool = true
-    var g : Bool = true
-    var y : Bool = true
-    var a : Bool = true
-    
-    @IBAction func british(_ sender: UISwitch) {
-        if (sender.isOn == true){
-            b = true
-        }
-        else{
-            b = false
-        }
-    }
-    
-    @IBAction func german(_ sender: UISwitch) {
-        if (sender.isOn == true){
-            g = true
-        }
-        else{
-            g = false
-        }
-    }
-    
-    @IBAction func japan(_ sender: UISwitch) {
-        if (sender.isOn == true){
-            y = true
-        }
-        else{
-            y = false
-        }
-    }
-    
-    @IBAction func argentina(_ sender: UISwitch) {
-        if (sender.isOn == true){
-            a = true
-        }
-        else{
-            a = false
-        }
-    }
+    @IBOutlet weak var british: UISwitch!
+    @IBOutlet weak var argentina: UISwitch!
+    @IBOutlet weak var japan: UISwitch!
+    @IBOutlet weak var german: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 
     @IBAction func button(_ sender: UIButton) {
@@ -69,9 +32,9 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "next") {
             let nextStoryboard = segue.destination as? SecondView
+            let value = Double(input.text!)
             
-            if (b) {
-                let value = Double(input.text!)
+            if (british.isOn) {
                 nextStoryboard?.bl = "USD to British Pounds:"
                 nextStoryboard?.blv = String(format: "%.1f", (value ?? 1.00) * poundConvert)
             }
@@ -80,8 +43,7 @@ class ViewController: UIViewController {
                 nextStoryboard?.blv = ""
             }
 
-            if (g) {
-                let value = Double(input.text!)
+            if (german.isOn) {
                 nextStoryboard?.gl = "USD to Deustche mark:"
                 nextStoryboard?.glv = String(format: "%.1f", (value ?? 1.00) * markConvert)
             }
@@ -90,8 +52,7 @@ class ViewController: UIViewController {
                 nextStoryboard?.glv = ""
             }
 
-            if (y) {
-                let value = Double(input.text!)
+            if (japan.isOn) {
                 nextStoryboard?.jl = "USD to Japanese Yen:"
                 nextStoryboard?.jlv = String(format: "%.1f", (value ?? 1.00) * yenConvert)
             }
@@ -100,8 +61,7 @@ class ViewController: UIViewController {
                 nextStoryboard?.jlv = ""
             }
             
-            if (a) {
-                let value = Double(input.text!)
+            if (argentina.isOn) {
                 nextStoryboard?.al = "USD to Argentine Peso:"
                 nextStoryboard?.alv = String(format: "%.1f", (value ?? 1.00) * argConvert)
             }
