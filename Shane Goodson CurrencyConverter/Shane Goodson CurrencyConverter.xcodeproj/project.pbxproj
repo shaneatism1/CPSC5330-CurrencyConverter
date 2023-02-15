@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3BF332E299C6CF8001B3991 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BF332D299C6CF8001B3991 /* SecondView.swift */; };
 		B3FC28C02999711500D0024D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FC28BF2999711500D0024D /* AppDelegate.swift */; };
 		B3FC28C22999711500D0024D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FC28C12999711500D0024D /* SceneDelegate.swift */; };
 		B3FC28C42999711500D0024D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FC28C32999711500D0024D /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B3BF332D299C6CF8001B3991 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		B3FC28BC2999711500D0024D /* Shane Goodson CurrencyConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shane Goodson CurrencyConverter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3FC28BF2999711500D0024D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3FC28C12999711500D0024D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				B3FC28BF2999711500D0024D /* AppDelegate.swift */,
 				B3FC28C12999711500D0024D /* SceneDelegate.swift */,
 				B3FC28C32999711500D0024D /* ViewController.swift */,
+				B3BF332D299C6CF8001B3991 /* SecondView.swift */,
 				B3FC28C52999711500D0024D /* Main.storyboard */,
 				B3FC28C82999711600D0024D /* Assets.xcassets */,
 				B3FC28CA2999711600D0024D /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				B3FC28C42999711500D0024D /* ViewController.swift in Sources */,
 				B3FC28C02999711500D0024D /* AppDelegate.swift in Sources */,
+				B3BF332E299C6CF8001B3991 /* SecondView.swift in Sources */,
 				B3FC28C22999711500D0024D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
