@@ -26,7 +26,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func button(_ sender: UIButton) {
-        performSegue(withIdentifier: "next", sender: self)
+        if (Double(input.text!) != nil) {
+            performSegue(withIdentifier: "next", sender: self)
+        }
+        else {
+            performSegue(withIdentifier: "invalid", sender: self)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

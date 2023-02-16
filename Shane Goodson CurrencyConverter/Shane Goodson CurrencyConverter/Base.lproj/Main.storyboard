@@ -196,6 +196,7 @@
                         <outlet property="input" destination="aLk-yJ-P3i" id="eU9-xv-9gj"/>
                         <outlet property="japan" destination="WkM-tX-pAo" id="FlC-tq-IVw"/>
                         <segue destination="eJd-bd-VoS" kind="show" identifier="next" id="dBZ-ST-aaJ"/>
+                        <segue destination="K3I-Sr-b5N" kind="show" identifier="invalid" id="BJg-g4-3mo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -386,6 +387,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kns-AL-tJ3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="873" y="3"/>
+        </scene>
+        <!--Invalid Option-->
+        <scene sceneID="IM0-gY-7dP">
+            <objects>
+                <viewController id="K3I-Sr-b5N" customClass="InvalidOption" customModule="Shane_Goodson_CurrencyConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F2i-X6-ayl">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="863"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SAM-QE-obw">
+                                <rect key="frame" x="0.0" y="59" width="430" height="804"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OcM-b4-TvK">
+                                        <rect key="frame" x="108" y="108" width="214" height="588"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="OcM-b4-TvK" firstAttribute="top" secondItem="SAM-QE-obw" secondAttribute="topMargin" constant="100" id="9Sm-F5-kb9"/>
+                                    <constraint firstItem="OcM-b4-TvK" firstAttribute="leading" secondItem="SAM-QE-obw" secondAttribute="leadingMargin" constant="100" id="FML-cr-NHK"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="OcM-b4-TvK" secondAttribute="bottom" constant="100" id="USz-Jq-d1E"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="OcM-b4-TvK" secondAttribute="trailing" constant="100" id="hqt-iC-GGt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Q4p-DM-LKd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SAM-QE-obw" firstAttribute="top" secondItem="Q4p-DM-LKd" secondAttribute="top" id="IZ6-1w-rwt"/>
+                            <constraint firstItem="Q4p-DM-LKd" firstAttribute="bottom" secondItem="SAM-QE-obw" secondAttribute="bottom" id="Lka-I1-oJy"/>
+                            <constraint firstItem="Q4p-DM-LKd" firstAttribute="trailing" secondItem="SAM-QE-obw" secondAttribute="trailing" id="RyN-yY-WX1"/>
+                            <constraint firstItem="SAM-QE-obw" firstAttribute="leading" secondItem="Q4p-DM-LKd" secondAttribute="leading" id="arr-I1-o9e"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="594-xC-t8e"/>
+                    <connections>
+                        <outlet property="text" destination="OcM-b4-TvK" id="BBa-Bg-7Qu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bMv-vl-zO8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1553" y="23"/>
         </scene>
     </scenes>
     <resources>

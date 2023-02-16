@@ -35,14 +35,36 @@ class SecondView: UIViewController {
         super.viewDidLoad()
         
         britishLabel.text = bl
+        britishLabel.numberOfLines = 0
+        britishLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
+        
         germanLabel.text = gl
+        germanLabel.numberOfLines = 0
+        germanLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
+        
         japanLabel.text = jl
+        japanLabel.numberOfLines = 0
+        japanLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
+        
         argentineLabel.text = al
+        argentineLabel.numberOfLines = 0
+        argentineLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
         
         britishLabelValue.text = blv
+        britishLabelValue.numberOfLines = 0
+        britishLabelValue.lineBreakMode = NSLineBreakMode.byWordWrapping
+        
         germanLabelValue.text = glv
+        germanLabelValue.numberOfLines = 0
+        germanLabelValue.lineBreakMode = NSLineBreakMode.byWordWrapping
+        
         japanLabelValue.text = jlv
+        japanLabelValue.numberOfLines = 0
+        japanLabelValue.lineBreakMode = NSLineBreakMode.byWordWrapping
+        
         argentineLabelValue.text = alv
+        argentineLabelValue.numberOfLines = 0
+        argentineLabelValue.lineBreakMode = NSLineBreakMode.byWordWrapping
     }
     
 
